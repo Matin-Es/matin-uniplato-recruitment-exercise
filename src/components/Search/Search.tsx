@@ -1,8 +1,8 @@
 import React from "react";
-import { StyledDiv } from "./Search.style";
+import { StyledH2 } from "./Search.style";
 
 const Search: React.FC = () => {
-  return <StyledDiv>Search</StyledDiv>;
+  return <StyledH2>Search</StyledH2>;
 };
 
 export default Search;

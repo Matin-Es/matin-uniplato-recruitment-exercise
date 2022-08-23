@@ -7,7 +7,7 @@ import { ReactComponent as ProfileSvg } from "../../assets/icons/profile.svg";
 import { NavLink } from "react-router-dom";
 
 interface NavLinkInterface {
-  activeClassName: string;
+  activeclassname: string;
 }
 
 export const StyledNavbarDiv = styled(motion.div)`

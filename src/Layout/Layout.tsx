@@ -8,9 +8,9 @@ import Home from "../components/Home/Home";
 import Posts from "../components/Posts/Posts";
 import Profile from "../components/Profile/Profile";
 
-const Layout: React.FC = () => {
+const Layout = () => {
   return (
-    <>
+    <div>
       <StyledContainerDiv>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,7 +20,7 @@ const Layout: React.FC = () => {
         </Routes>
       </StyledContainerDiv>{" "}
       <Navbar />
-    </>
+    </div>
   );
 };
 

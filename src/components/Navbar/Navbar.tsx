@@ -22,34 +22,34 @@ const Navbar: React.FC = () => {
 
   // };
   return (
-    <>
+   
       <StyledContainerDiv>
-        <StyledNavLink activeClassName="selected" to={"/"}>
+        <StyledNavLink activeclassname="selected" to={"/"}>
           <StyledNavBarHolderNav>
             <StyledHomeIcon></StyledHomeIcon>
             <StyledNavbarDiv> Home</StyledNavbarDiv>
           </StyledNavBarHolderNav>
         </StyledNavLink>
-        <StyledNavLink activeClassName="selected" to={"search"}>
+        <StyledNavLink activeclassname="selected" to={"search"}>
           <StyledNavBarHolderNav>
             <StyledSearchIcon></StyledSearchIcon>
             <StyledNavbarDiv>Search</StyledNavbarDiv>
           </StyledNavBarHolderNav>
         </StyledNavLink>
-        <StyledNavLink activeClassName="selected" to={"posts"}>
+        <StyledNavLink activeclassname="selected" to={"posts"}>
           <StyledNavBarHolderNav>
             <StyledPostsIcon></StyledPostsIcon>
             <StyledNavbarDiv>Posts</StyledNavbarDiv>
           </StyledNavBarHolderNav>
         </StyledNavLink>
-        <StyledNavLink activeClassName="selected" to={"profile"}>
+        <StyledNavLink activeclassname="selected" to={"profile"}>
           <StyledNavBarHolderNav>
             <StyledProfileIcon></StyledProfileIcon>
             <StyledNavbarDiv>Profile</StyledNavbarDiv>
           </StyledNavBarHolderNav>
         </StyledNavLink>
       </StyledContainerDiv>
-    </>
+  
   );
 };
 
