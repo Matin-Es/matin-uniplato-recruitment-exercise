@@ -12,7 +12,7 @@ const Post = React.forwardRef((post: any, ref: any) => {
           src={post.src}
           onError={(e: any) => {
             e.target.src =
-              "https://media.carphonewarehouse.com/is/image/cpw2/galaxy-a40-wallet-caseBLACK?$accessories$";
+              "./imageNotFound.png";
             e.onerror = null;
           }}
         />
