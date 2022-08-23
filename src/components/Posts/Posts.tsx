@@ -46,10 +46,15 @@ const Posts: React.FC = () => {
     [isFetchingNextPage, fetchNextPage, hasNextPage]
   );
 
-  if (status === "error" && error instanceof Error)
-    return <div>{error.message}</div>;
+  if (status == "error" && error instanceof Error)
+    return <StyledDiv>{error.message}</StyledDiv>;
 
   //   console.log(data?.pages[0].data.data);
+
+  // const imageErrorHandler = (e:Event) => {
+  //   e?.target?.addEventListener
+  // };
+
   const content =
     data &&
     data.pages &&
@@ -65,6 +70,7 @@ const Posts: React.FC = () => {
                 title={post.title}
                 src={post.image}
                 description={post.description}
+                // error={imageErrorHandler}
               />
             );
           } else
@@ -74,6 +80,7 @@ const Posts: React.FC = () => {
                 title={post.title}
                 src={post.image}
                 description={post.description}
+                // error={imageErrorHandler}
               />
             );
         })
@@ -82,13 +89,14 @@ const Posts: React.FC = () => {
 
   return (
     <>
-      {content}
-      {isFetchingNextPage && <Loading />}
       {status === "loading" ? (
         <StyledDiv>
           <Loading />{" "}
         </StyledDiv>
-      ) : null}
+      ) : (
+        content
+      )}
+      {isFetchingNextPage && <Loading />}
       {/* <p>
         <a href="#top">Back to Top</a>
       </p> */}

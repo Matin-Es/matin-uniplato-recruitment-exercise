@@ -7,6 +7,7 @@ import Search from "../components/Search/Search";
 import Home from "../components/Home/Home";
 import Posts from "../components/Posts/Posts";
 import Profile from "../components/Profile/Profile";
+import PageNotFound from '../components/PageNotFound/PageNotFound'
 
 const Layout = () => {
   return (
@@ -17,6 +18,7 @@ const Layout = () => {
           <Route path="search" element={<Search />} />
           <Route path="posts" element={<Posts />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </StyledContainerDiv>{" "}
       <Navbar />

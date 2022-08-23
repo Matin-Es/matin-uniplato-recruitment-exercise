@@ -4,10 +4,18 @@ const Post = React.forwardRef((post: any, ref: any) => {
   const truncate = (str: string) => {
     return str.length >= 200 ? str.substring(0, 200) + "..." : str;
   };
+
   const postBody = (
     <CardContainerDiv>
       <div>
-        <Image src={post.src} />
+        <Image
+          src={post.src}
+          onError={(e: any) => {
+            e.target.src =
+              "https://media.carphonewarehouse.com/is/image/cpw2/galaxy-a40-wallet-caseBLACK?$accessories$";
+            e.onerror = null;
+          }}
+        />
       </div>
       <div>
         <Title>{post.title}</Title>
