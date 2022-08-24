@@ -1,10 +1,16 @@
 import React, { useRef, useCallback } from "react";
+import * as Scroll from "react-scroll";
 import { QueryFunctionContext, useInfiniteQuery } from "@tanstack/react-query";
 import { getPostsPage } from "../../api/axios";
-import { Loading, StyledDiv } from "./Posts.style";
+import { Loading, StyledDiv, StyledBackToTopContainer } from "./Posts.style";
 import PostCard from "./../PostCard/PostCard";
+
 const Posts: React.FC = () => {
+  let Link = Scroll.Link;
+  let Element = Scroll.Element;
+
   //Fetching data
+
   const {
     fetchNextPage,
     hasNextPage,
@@ -78,6 +84,8 @@ const Posts: React.FC = () => {
 
   return (
     <>
+      <Element name="firstInsideContainer"></Element>
+
       {status === "loading" ? (
         <StyledDiv>
           <Loading />{" "}
@@ -86,6 +94,17 @@ const Posts: React.FC = () => {
         content
       )}
       {isFetchingNextPage && <Loading />}
+      {status !== "loading" && !isFetchingNextPage ? (
+        <Link
+          activeClass="active"
+          to="firstInsideContainer"
+          smooth={true}
+          duration={250}
+          containerId="containerElement"
+        >
+          <StyledBackToTopContainer></StyledBackToTopContainer>
+        </Link>
+      ) : null}
     </>
   );
 };

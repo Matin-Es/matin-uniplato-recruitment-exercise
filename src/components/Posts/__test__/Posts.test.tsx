@@ -23,6 +23,6 @@ describe("posts component test", () => {
 
   it("correctly renders the initial component", () => {
     const divs = container.querySelectorAll("div");
-    expect(divs).toHaveLength(1);
+    expect(divs).toHaveLength(2);
   });
 });

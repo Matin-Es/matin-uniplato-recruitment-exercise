@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import * as Scroll from "react-scroll";
+let Link = Scroll.Link;
+
 export const StyledContainerDiv = styled.div`
   display: block;
   width: 375px;
@@ -10,6 +13,7 @@ export const StyledContainerDiv = styled.div`
   text-align: center;
   justify-content: center;
   align-items: center;
+  position: relative;
   background-color: #fafafa;
   &::-webkit-scrollbar {
     display: none; //chrome
