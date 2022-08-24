@@ -1,15 +1,14 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import { StyledContainerDiv } from "./Layout.style";
-import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
-import { Routes, Route, Link } from "react-router-dom";
-import Search from "../components/Search/Search";
 import Home from "../components/Home/Home";
+import Search from "../components/Search/Search";
 import Posts from "../components/Posts/Posts";
 import Profile from "../components/Profile/Profile";
 import PageNotFound from "../components/PageNotFound/PageNotFound";
 
-const Layout = () => {
+const Layout: React.FC = () => {
   return (
     <>
       <StyledContainerDiv>
@@ -20,7 +19,7 @@ const Layout = () => {
           <Route path="profile" element={<Profile />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
-      </StyledContainerDiv>{" "}
+      </StyledContainerDiv>
       <Navbar />
     </>
   );

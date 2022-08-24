@@ -1,17 +1,27 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 import { ReactComponent as HomeSvg } from "../../assets/icons/home.svg";
 import { ReactComponent as SearchSvg } from "../../assets/icons/search.svg";
 import { ReactComponent as PostsSvg } from "../../assets/icons/posts.svg";
 import { ReactComponent as ProfileSvg } from "../../assets/icons/profile.svg";
-import { NavLink } from "react-router-dom";
 
 interface NavLinkInterface {
   activeclassname: string;
 }
 
-export const StyledNavbarDiv = styled(motion.div)`
-  /* border: 1px solid red; */
+export const StyledContainerDiv = styled.div`
+  display: flex;
+  width: 375px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const StyledNavbarDiv = styled.div`
   opacity: 0;
   cursor: pointer;
   position: relative;
@@ -23,21 +33,8 @@ export const StyledNavbarDiv = styled(motion.div)`
   width: 0px;
   height: 100%;
 `;
-export const StyledContainerDiv = styled.div`
-  display: flex;
-  width: 375px;
-  padding: 10px;
-  font-size: 12px;
-  font-weight: bold;
-  margin: auto;
-  /* border: 1px solid red; */
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-`;
-export const StyledHomeIcon = styled(HomeSvg)`
-  /* border: 1px solid red; */
 
+export const StyledHomeIcon = styled(HomeSvg)`
   &:hover {
     color: #00bedf;
   }
@@ -50,8 +47,6 @@ export const StyledHomeIcon = styled(HomeSvg)`
 `;
 
 export const StyledSearchIcon = styled(SearchSvg)`
-  /* border: 1px solid red; */
-
   &:hover {
     color: #00bedf;
   }
@@ -63,8 +58,6 @@ export const StyledSearchIcon = styled(SearchSvg)`
   margin: 10px;
 `;
 export const StyledPostsIcon = styled(PostsSvg)`
-  /* border: 1px solid red; */
-
   &:hover {
     color: #00bedf;
   }
@@ -76,8 +69,6 @@ export const StyledPostsIcon = styled(PostsSvg)`
   margin: 10px;
 `;
 export const StyledProfileIcon = styled(ProfileSvg)`
-  /* border: 1px solid red; */
-
   &:hover {
     color: #00bedf;
   }
@@ -89,24 +80,18 @@ export const StyledProfileIcon = styled(ProfileSvg)`
   margin: 10px;
 `;
 
-export const StyledNavBarHolderNav = styled(motion.nav)`
+export const StyledNavBarHolderNav = styled.nav`
   border-radius: 200px;
-  /* background-color: #b3ebf7;  */
-  /* border: 1px solid red; */
-
   cursor: pointer;
   text-align: center;
   width: 93.75px;
   justify-content: center;
   align-items: center;
-
   display: flex;
   &:hover {
     color: #00bedf;
   }
   &:hover ${StyledNavbarDiv} {
-    /* transform: translate(-10px, 10%); */
-
     opacity: 1;
     display: flex;
     position: relative;
@@ -123,7 +108,6 @@ export const StyledNavBarHolderNav = styled(motion.nav)`
     ${StyledPostsIcon},
     &:hover
     ${StyledProfileIcon} {
-    /* display: flex; */
     transform: translate(-10px, 00%);
     color: #00bedf;
   }

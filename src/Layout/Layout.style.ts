@@ -7,13 +7,12 @@ export const StyledContainerDiv = styled.div`
   margin: auto;
   overflow-y: auto;
   overflow-x: hidden;
-  /* border: 1px solid red; */
   text-align: center;
   justify-content: center;
   align-items: center;
   background-color: #fafafa;
   &::-webkit-scrollbar {
-    display: none;
-    scrollbar-width: none;
+    display: none; //chrome
+    scrollbar-width: none; //firefox
   }
 `;

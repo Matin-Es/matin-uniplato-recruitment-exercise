@@ -2,12 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter as Router } from "react-router-dom";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
-import { createRoot } from "react-dom/client";
 
 const queryClient = new QueryClient();
-const container = document.getElementById("root")
+const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container! as HTMLElement);
 root.render(
   <React.StrictMode>

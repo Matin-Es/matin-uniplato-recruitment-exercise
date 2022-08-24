@@ -1,8 +1,6 @@
-import Navbar from "./components/Navbar/Navbar";
-import "./global.css";
+import { BrowserRouter as Router } from "react-router-dom";
 import Layout from "./Layout/Layout";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { BrowserRouter as Router} from "react-router-dom";
+import "./global.css";
 
 function App() {
   return (

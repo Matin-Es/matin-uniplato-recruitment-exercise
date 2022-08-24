@@ -1,5 +1,5 @@
-import Home from "../Home";
 import * as ReactDOM from "react-dom";
+import Home from "../Home";
 
 describe("postcard component test", () => {
   let container: HTMLDivElement;

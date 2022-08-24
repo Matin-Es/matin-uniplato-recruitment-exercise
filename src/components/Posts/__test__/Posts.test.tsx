@@ -1,6 +1,6 @@
-import Posts from "../Posts";
 import * as ReactDOM from "react-dom";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import Posts from "../Posts";
 
 describe("posts component test", () => {
   let container: HTMLDivElement;
@@ -10,7 +10,6 @@ describe("posts component test", () => {
     document.body.appendChild(container);
     ReactDOM.render(
       <QueryClientProvider client={queryClient}>
-        {" "}
         <Posts />
       </QueryClientProvider>,
       container

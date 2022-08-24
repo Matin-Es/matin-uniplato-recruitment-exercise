@@ -1,6 +1,7 @@
 import * as ReactDOM from "react-dom";
-import Navbar from "./../Navbar";
 import { MemoryRouter } from "react-router-dom";
+import Navbar from "./../Navbar";
+
 describe("navbar component test", () => {
   let container: HTMLDivElement;
 

@@ -1,7 +1,7 @@
-import Search from "../Search";
 import * as ReactDOM from "react-dom";
+import Search from "../Search";
 
-describe("postcard component test", () => {
+describe("Search component test", () => {
   let container: HTMLDivElement;
 
   beforeEach(() => {

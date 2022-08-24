@@ -8,5 +8,4 @@ export const StyledDiv = styled.div`
   position: relative;
   top: 50%;
   left: 0%;
-  /* margin: -25px 0 0 -25px;  */
 `;

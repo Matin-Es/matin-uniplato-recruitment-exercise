@@ -1,5 +1,5 @@
-import PostCard from "../PostCard";
 import * as ReactDOM from "react-dom";
+import PostCard from "../PostCard";
 
 describe("postcard component test", () => {
   let container: HTMLDivElement;

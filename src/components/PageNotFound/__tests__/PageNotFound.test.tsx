@@ -1,7 +1,7 @@
-import PageNotFound from "../PageNotFound";
 import * as ReactDOM from "react-dom";
+import PageNotFound from "../PageNotFound";
 
-describe("postcard component test", () => {
+describe("pageNotFound component test", () => {
   let container: HTMLDivElement;
 
   beforeEach(() => {

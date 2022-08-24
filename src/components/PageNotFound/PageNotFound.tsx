@@ -1,6 +1,5 @@
-import React from "react";
-import { StyledNotFoundDiv,StyledP } from "./PageNotFound.style";
-const PageNotFound = () => {
+import { StyledNotFoundDiv, StyledP } from "./PageNotFound.style";
+const PageNotFound: React.FC = () => {
   return (
     <>
       <StyledNotFoundDiv></StyledNotFoundDiv>

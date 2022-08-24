@@ -1,7 +1,7 @@
-import Profile from "../Profile";
 import * as ReactDOM from "react-dom";
+import Profile from "../Profile";
 
-describe("postcard component test", () => {
+describe("Profile component test", () => {
   let container: HTMLDivElement;
 
   beforeEach(() => {

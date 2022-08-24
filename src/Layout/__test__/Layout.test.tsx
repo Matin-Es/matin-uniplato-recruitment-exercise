@@ -1,10 +1,10 @@
-import Layout from "../Layout";
 import * as ReactDOM from "react-dom";
-import { MemoryRouter } from "react-router-dom";
-import { createMemoryHistory } from "history";
+import { MemoryRouter, Router } from "react-router-dom";
 import { render } from "@testing-library/react";
-import { Router } from "react-router-dom";
-describe("postcard component test", () => {
+import { createMemoryHistory } from "history";
+import Layout from "../Layout";
+
+describe("Layout component test", () => {
   let container: HTMLDivElement;
 
   beforeEach(() => {

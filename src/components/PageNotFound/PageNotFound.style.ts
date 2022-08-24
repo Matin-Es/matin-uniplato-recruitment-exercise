@@ -14,9 +14,9 @@ export const StyledNotFoundDiv = styled.div`
   background-size: 450px;
 `;
 export const StyledP = styled.p`
- position: relative;
+  position: relative;
   top: 25%;
   left: 0%;
   color: #3b5266;
   font-weight: 500;
-`
+`;
