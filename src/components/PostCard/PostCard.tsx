@@ -2,7 +2,7 @@ import React from "react";
 import { CardContainerDiv, Image, Title, Description } from "./PostCard.style";
 const Post = React.forwardRef((post: any, ref: any) => {
   const truncate = (str: string) => {
-    return str.length >= 200 ? str.substring(0, 200) + "..." : str;
+    return str?.length >= 200 ? str.substring(0, 200) + "..." : str;
   };
 
   const postBody = (
@@ -11,9 +11,8 @@ const Post = React.forwardRef((post: any, ref: any) => {
         <Image
           src={post.src}
           onError={(e: any) => {
-            e.target.src =
-              "./imageNotFound.png";
-            e.onerror = null;
+            e.target.src = "./imageNotFound.png";
+            e.onError = null;
           }}
         />
       </div>

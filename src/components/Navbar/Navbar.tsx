@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, BrowserRouter as Router } from "react-router-dom";
 
 import {
   StyledNavbarDiv,
@@ -22,9 +22,9 @@ const Navbar: React.FC = () => {
 
   // };
   return (
-   
+  
       <StyledContainerDiv>
-        <StyledNavLink activeclassname="selected" to={"/"}>
+        <StyledNavLink activeclassname="selected" to={""}>
           <StyledNavBarHolderNav>
             <StyledHomeIcon></StyledHomeIcon>
             <StyledNavbarDiv> Home</StyledNavbarDiv>
@@ -49,7 +49,6 @@ const Navbar: React.FC = () => {
           </StyledNavBarHolderNav>
         </StyledNavLink>
       </StyledContainerDiv>
-  
   );
 };
 
